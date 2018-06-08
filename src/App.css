@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  color: #dddddd;
+}
+@media screen and (max-width: 600px) {
+  .App {
+    margin: 17px;
+  }
+}
+
+#form {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  padding: 17px;
+  max-width: 600px;
+  margin: 17px auto;
+  background-color: #575757;
+  border: 1px solid #575757;
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px black;
+}
+#form .input-field {
+  width: 100%;
+  box-sizing: border-box;
+}
+#form .input-field label, #form .input-field input, #form .input-field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px auto;
+}
+#form .input-field label {
+  text-align: left;
+  padding-left: 0;
+}
+#form .input-field input[type="submit"] {
+  background-color: #e6e7e5;
+  border-radius: 5px;
+  border: 1px solid #575757;
+  transition: background-color 250ms;
+}
+#form .input-field input[type="submit"]:hover {
+  background-color: #9c9a9b;
+  color: #fff;
+}
+#form .input-field input[type="text"], #form .input-field textarea {
+  border: 1px solid #575757;
+}
+@media screen and (min-width: 600px) {
+  #form .input-field {
+    display: flex;
+  }
+  #form input[type="text"], #form textarea {
+    flex: 4 4 0;
+  }
+  #form label {
+    flex: 1 1 0;
+  }
+  #form input[type="submit"] {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

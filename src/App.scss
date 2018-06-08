@@ -1,0 +1,67 @@
+$bradius: 5px;
+$border: 1px solid #575757;
+$backColor: #575757;
+
+.App {
+  text-align: center;
+  color: #dddddd;
+  @media screen and (max-width: 600px){
+    margin: 17px;
+  }
+}
+#form{
+  font-family: Arial, sans-serif;
+  font-size: large;
+  padding: 17px;
+  max-width: 600px;
+  margin: 17px auto;
+  background-color: $backColor;
+  border: $border;
+  border-radius: $bradius;
+  box-shadow: 5px 5px 25px black;
+  .input-field{
+    width: 100%;
+    box-sizing: border-box;
+    label,input,textarea{
+
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: $bradius;
+      padding: 10px;
+      margin: 5px auto;
+    }
+    label{
+      text-align: left;
+      padding-left: 0;
+    }
+    input[type="submit"]{
+      background-color: #e6e7e5;
+      border-radius: $bradius;
+      border: $border;
+      transition:background-color 250ms;
+      &:hover{
+        background-color: #9c9a9b;
+        color: #fff;
+      }
+    }
+    input[type="text"],textarea{
+      border: $border;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .input-field{
+      display: flex;
+    }
+    input[type="text"], textarea{
+      flex: 4 4 0;
+    }
+    label{
+      flex: 1 1 0;
+    }
+    input[type="submit"]{
+      width: 250px;
+    }
+  }
+}
+
